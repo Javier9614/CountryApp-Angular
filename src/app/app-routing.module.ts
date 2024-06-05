@@ -23,8 +23,12 @@ const routes: Routes = [
     loadChildren:() => import ('./countries/countries.module').then(m => m.CountriesModule)
   },
   {
+    path:"pokemons",
+    loadChildren:() => import ('./pokemons/pokemons.module').then(m => m.PokemonsModule)
+  },
+  {
     path:"**",
-    redirectTo:"countries"
+    redirectTo:"pokemons"
   }
 
 ];
