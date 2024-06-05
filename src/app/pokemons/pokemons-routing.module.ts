@@ -21,7 +21,7 @@ const routes:Routes=[
   },
   {
     path:"**",
-    redirectTo:"by-regions"
+    redirectTo:"by-type"
   }
 ]
 

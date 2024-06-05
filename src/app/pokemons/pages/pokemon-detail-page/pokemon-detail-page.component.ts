@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-pokemon-detail-page',
+  selector: 'pokemons-pokemon-detail-page',
   templateUrl: './pokemon-detail-page.component.html',
   styles: ``
 })

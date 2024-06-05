@@ -1,1 +1,17 @@
-<p>regions-page works!</p>
+<h2>By Region</h2>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <shared-seach-box
+    (onValue)="searchByRegion($event)"
+    placeholder="Search by Type..."></shared-seach-box>
+  </div>
+
+</div>
+<div class="row">
+  <div class="col">
+    <pokemons-table [pokemonsEntry] ="pokemons"></pokemons-table>
+  </div>
+
+</div>

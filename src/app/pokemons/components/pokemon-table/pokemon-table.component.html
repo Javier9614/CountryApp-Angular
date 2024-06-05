@@ -1,0 +1,28 @@
+<div *ngIf="pokemons.length===0; else table" class="alert alert-warning text-center">
+  No hay pokemons que mostrar
+</div>
+
+<ng-template #table>
+  <table class="table table-hover text-center">
+    <thead>
+
+      <tr>
+        <th>Pokemon</th>
+        <th>Tipo</th>
+        <th>Numero de pokedex</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pokemon of pokemons">
+        <td>{{pokemon.pokemon.name | titlecase}} </td>
+        <td>{{pokemon.type |titlecase}}</td>
+        <td>{{pokemon.id}}</td>
+        <td>
+          <a href="#">Ver mas</a>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</ng-template>
+

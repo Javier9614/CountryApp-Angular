@@ -1,1 +1,20 @@
-<p>types-page works!</p>
+<h2>By Type</h2>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <shared-seach-box
+    (onValue)="searchByType($event)"
+    placeholder="Search by Type..."></shared-seach-box>
+  </div>
+
+</div>
+<div class="row">
+  <div class="col">
+    <hr>
+
+    <pokemons-table [pokemons] ="pokemons"></pokemons-table>
+
+  </div>
+
+</div>
